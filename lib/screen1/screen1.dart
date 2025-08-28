@@ -16,7 +16,7 @@ class Screen1 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const AutoSizeText(
-              text: 'This is Screen 1',
+              text: 'This is Screen 1 (feature branch)',
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 20),
