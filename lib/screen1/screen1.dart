@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../utils/autosize_text.dart';
-import '../screen2/screen2.dart';
-import '../screen3/screen3.dart';
+import '../autosize_text.dart';
 
 class Screen1 extends StatelessWidget {
   const Screen1({super.key});
@@ -21,7 +19,7 @@ class Screen1 extends StatelessWidget {
               text: 'This is Screen 1',
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
-            const SizedBox(height: 40),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
@@ -30,26 +28,6 @@ class Screen1 extends StatelessWidget {
                 );
               },
               child: const AutoSizeText(text: 'Go to Screen 1'),
-            ),
-            const SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const Screen2()),
-                );
-              },
-              child: const AutoSizeText(text: 'Go to Screen 2'),
-            ),
-            const SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const Screen3()),
-                );
-              },
-              child: const AutoSizeText(text: 'Go to Screen 3'),
             ),
           ],
         ),
